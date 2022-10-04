@@ -2,15 +2,10 @@ const express = require('express')
 const { Router } = express
 const routerProducts = Router()
 const apiContainer = require ('./src/containers/apiContainer') // import de clase constructora
-
-
 const app = express()
 
-app.engine('handlebars', engine())
 
-// establecemos el motor de plantilla a utilizar
 app.set('view engine', 'pug')
-// establecemos directorio donde se encuentran los archivos de plantilla
 app.set('views', './views')
 
 app.use(express.json())

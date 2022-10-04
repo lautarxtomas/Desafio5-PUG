@@ -1,0 +1,15 @@
+html 
+    head 
+        title='PRODUCTOS CARGADOS'
+    body
+        h1 PRODUCTOS CARGADOS:
+        each product in products
+            ul
+                li=(product.title)
+                li=(product.price)
+                li=(product.desc) 
+
+
+        a(href='/') 
+            button VOLVER A CARGAR PRODUCTO 
+
